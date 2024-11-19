@@ -1,0 +1,26 @@
+[
+  {
+    "name": "CURRENT_ACCOUNT",
+    "balancee": 1000,
+    "transaction": {
+      "to": 123,
+      "amount": 2000,
+      "desc": "shopping"}
+  },
+  {
+    "name": "SAVING_ACCOUNT",
+    "balancee": 2000,
+    "transaction": {
+      "to": 456,
+      "amount": 4000,
+      "desc": "services"}
+  },
+  {
+      "name": "CURRENT_ACCOUNT",
+      "balancee": 4000,
+      "transaction": {
+        "to": 789,
+        "amount": 1000,
+        "desc": "bills"}
+    }
+]
