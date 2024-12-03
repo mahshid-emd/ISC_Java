@@ -19,16 +19,18 @@ public class Main {
         UserSerialization.serializeUser(users, filename);
         
         // deserialize the User object
-        List<User> output = UserSerialization.deserializeUser(filename);
-        System.out.println(output);
+        List<User> deserializedUser = UserSerialization.deserializeUser(filename);
+        System.out.println(deserializedUser);
         
         // Display deserialized User object details
-//        if (deserializedUser != null) {
-//            System.out.println("Username: " + deserializedUser.getUsername());
-//            System.out.println("Password: " + deserializedUser.getPassword());
-//            System.out.println("Card Number: " + deserializedUser.getCardnumber());
-        
-    }
+        if (deserializedUser != null) {
+            for(User u: deserializedUser) {
+            	System.out.println("Username: " + u.getUsername());
+                System.out.println("Password: " + u.getPassword());
+                System.out.println("Card Number: " + u.getCardnumber());
+            }
+        }
+	}
 }
 
 	

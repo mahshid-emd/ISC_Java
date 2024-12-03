@@ -21,6 +21,10 @@ public class ReadFromJSON {
 		
     	// for several objects
         List<Account> accounts = objMap.readValue(file, new TypeReference<List<Account>>() {});
+        
+        File file1 = new File("data1.json");
+        objMap.writeValue(file1, accounts);
+        
      
         accounts.forEach(t -> System.out.println(t));
 
